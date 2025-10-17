@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Count</title>
+  <!-- Tailwind CSS CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-50">
+  <div class="text-center p-6 mt-10 shadow-2xl w-full max-w-md mx-auto bg-white rounded-2xl">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold pb-4 text-purple-600">Message something:</h1>
+
+    <textarea id="myTextarea" rows="5" cols="40"  
+      class="border border-black p-2 w-full resize-none rounded-md " placeholder="Type Here..."></textarea>
+    </textarea>
+
+    <div id="charCount" class="mt-2 text-gray-700 text-sm sm:text-base">0/200 characters</div>
+    <div id="warning" class="text-red-600 font-bold text-sm sm:text-base mt-1"></div>
+  </div>
+
+  <!-- Javascript -->
+   
+  <script src="/script.js"></script>
+</body>
+</html>
